@@ -1,0 +1,7 @@
+=== What is ZLR? ===
+ZLR is a .NET implementation of the Z-machine.
+Originally developed as a proof of concept for using JIT to speed up complex
+interactive fiction games, ZLR continues to be developed for use as a debugger
+and integration test engine in ZILF.
+This project's ongoing development is made possible by the hosting services
+generously provided by Octobus and Clever Cloud.
