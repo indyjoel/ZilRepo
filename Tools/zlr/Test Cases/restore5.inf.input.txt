@@ -1,0 +1,6 @@
+
+restore
+save
+
+restore
+quit
