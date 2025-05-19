@@ -1,1 +1,0 @@
-#define VERSION "2006-09-17"
