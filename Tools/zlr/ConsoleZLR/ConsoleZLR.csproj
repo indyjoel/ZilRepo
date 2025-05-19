@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Console interface for ZLR.</Description>
+    <Authors>Tara McGrew</Authors>
+    <Copyright>Copyright © 2007-2023 Tara McGrew</Copyright>
+    <RepositoryUrl>https://foss.heptapod.net/zilf/zlr</RepositoryUrl>
+    <PackageProjectUrl>https://foss.heptapod.net/zilf/zlr</PackageProjectUrl>
+    <PackageIconUrl>https://foss.heptapod.net/uploads/-/system/project/avatar/135/zlr-logo.png?width=64</PackageIconUrl>
+    <RepositoryType>mercurial</RepositoryType>
+    <AssemblyVersion>0.9.0.0</AssemblyVersion>
+    
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputType>Exe</OutputType>
+
+    <RootNamespace>ZLR.Interfaces.SystemConsole</RootNamespace>
+    <Nullable>enable</Nullable>
+
+    <CodeAnalysisRuleSet>..\ZLR.ruleset</CodeAnalysisRuleSet>
+
+    <PublishUrl>publish\</PublishUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZLR.VM\ZLR.VM.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2020.1.0">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Nito.AsyncEx" Version="5.0.0" />
+    <PackageReference Include="System.Collections.Immutable" Version="1.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Antlr4.Runtime" Version="4.6.6" />
+    <PackageReference Include="Antlr4.CodeGenerator" Version="4.6.6">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
