@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description></Description>
+    <Authors></Authors>
+    <Copyright></Copyright>
+    <RepositoryUrl></RepositoryUrl>
+    <RepositoryType>mercurial</RepositoryType>
+    <AssemblyVersion></AssemblyVersion>
+
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputType>Exe</OutputType>
+
+    <RootNamespace>TestSuite</RootNamespace>
+
+    <CodeAnalysisRuleSet>..\ZLR.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZLR.VM\ZLR.VM.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2020.1.0">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <Import Project="..\TestSuite.TestCase\TestSuite.TestCase.projitems" Label="Shared" />
+</Project>
